@@ -73,11 +73,6 @@
         </service>
 
         <service
-            android:name=".fpsinfo.FPSInfoService"
-            android:exported="false">
-        </service>
-
-        <service
             android:name=".fpsinfo.FPSTileService"
             android:icon="@drawable/ic_fps"
             android:label="@string/fps_info_title"
