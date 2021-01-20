@@ -12,6 +12,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
+# Build ANXCamera
+$(call inherit-product-if-exists, vendor/ANXCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
