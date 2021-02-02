@@ -68,7 +68,7 @@ void load_raphaelglobal() {
     property_override("ro.product.system.model", "Mi 9T Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V12.0.3.0.QFKMIXM release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ1A.210205.004 7038034 release-keys");
 }
 
 void load_raphaelin() {
@@ -76,7 +76,7 @@ void load_raphaelin() {
     property_override("ro.product.system.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphaelin");
     property_override("ro.product.device", "raphaelin");
-    property_override("ro.build.description", "raphaelin-user 10 QKQ1.190825.002 V12.0.4.0.QFKINXM release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ1A.210205.004 7038034 release-keys");
 }
 
 void load_raphael() {
@@ -84,7 +84,7 @@ void load_raphael() {
     property_override("ro.product.system.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V12.0.6.0.QFKCNXM release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ1A.210205.004 7038034 release-keys");
 }
 
 void vendor_load_properties() {
@@ -99,7 +99,7 @@ void vendor_load_properties() {
     } else {
         LOG(ERROR) << __func__ << ": unexcepted region!";
     }
-
+    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys");
     load_dalvik_properties();
 
     property_override("ro.apex.updatable", "true");
@@ -107,4 +107,3 @@ void vendor_load_properties() {
     property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
         "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys");
 }
-
