@@ -13,9 +13,11 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 #USE_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1080 $(call inherit-product, vendor/kangos/config/common.mk) 
 
-TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/kangos/config/common.mk)
+PRODUCT_PRODUCT_PROPERTIES += \ 
+ro.kangos.maintainer=Sherif Rahim \ 
+ro.kangos.cpu=SDM855
 
 # Build ANXCamera
 $(call inherit-product-if-exists, vendor/ANXCamera/config.mk)
