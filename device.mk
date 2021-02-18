@@ -39,8 +39,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/etc/permissions/privapp-permissions-gcam.xml
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -139,10 +138,6 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.raphael
-
-# Prebuilt Packages
-PRODUCT_PACKAGES += \
-    GoogleCamera
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
