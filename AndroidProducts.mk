@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kangos_raphael.mk
+    $(LOCAL_DIR)/potato_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    kangos_raphael-user \
-    kangos_raphael-userdebug \
-    kangos_raphael-eng
+    potato_raphael-user \
+    potato_raphael-userdebug \
+    potato_raphael-eng
